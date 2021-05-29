@@ -1,0 +1,19 @@
+{% extends 'base/layout.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/signup/signup.css' %}"> 
+
+
+
+
+{% endblock content %}
+
+
+{% block javascript %}
+    {{ block.super }} {# this loads the base js scripts #}
+    {# put page-specific js here #}
+    <script src="{% static 'js/signup/signup.js' %}"></script>
+{% endblock %}

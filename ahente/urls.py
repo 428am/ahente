@@ -17,8 +17,9 @@ from django.contrib import admin
 from django.urls import path,include
 
 from django.conf.urls import url
-from marketplace import home
+from marketplace import home, signup
 
 urlpatterns = [
     path('', home.Home.as_view(), name='home'),
+    path('signup/', signup.Signup.as_view(), name='signup'),
 ] 
